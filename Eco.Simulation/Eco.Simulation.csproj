@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.Simulation.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02FF010D-D723-4985-8467-17E8BFCBEB01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.Simulation</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Stats">
+      <HintPath>lib\Eco.Stats.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.World">
+      <HintPath>lib\Eco.World.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.WorldGenerator">
+      <HintPath>lib\Eco.WorldGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Collections.Immutable" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Drawing.Common" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Threading.Tasks.Parallel" />
+    <Reference Include="System.Threading.Thread" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WorldGenerator\WorldLayerEditor.cs" />
+    <Compile Include="WorldGenerator\EcoColorExtensions.cs" />
+    <Compile Include="WorldGenerator\WorldLayerPanel.cs" />
+    <Compile Include="Simulation\AnimalSim.cs" />
+    <Compile Include="Simulation\ClimateState.cs" />
+    <Compile Include="Simulation\ClimateSim.cs" />
+    <Compile Include="Simulation\CsvConverter.cs" />
+    <Compile Include="Simulation\DeathType.cs" />
+    <Compile Include="Simulation\EcoSim.cs" />
+    <Compile Include="Simulation\PlantPack.cs" />
+    <Compile Include="Simulation\PlantSimEvents.cs" />
+    <Compile Include="Simulation\PlantSim.cs" />
+    <Compile Include="Simulation\Simulation.cs" />
+    <Compile Include="Simulation\Types\AnimalSpecies.cs" />
+    <Compile Include="Simulation\Types\PlantGroupDefinition.cs" />
+    <Compile Include="Simulation\Types\PlantSpecies.cs" />
+    <Compile Include="Simulation\Types\SpeciesResource.cs" />
+    <Compile Include="Simulation\Types\Species.cs" />
+    <Compile Include="Simulation\Types\TreeBranchDef.cs" />
+    <Compile Include="Simulation\Types\TreeSpecies.cs" />
+    <Compile Include="Simulation\Tracking\AnimalPerfStats.cs" />
+    <Compile Include="Simulation\Time\PeriodicUpdateConfig.cs" />
+    <Compile Include="Simulation\Time\TimePlugin.cs" />
+    <Compile Include="Simulation\Time\WorldTime.cs" />
+    <Compile Include="Simulation\Settings\ClimateSettings.cs" />
+    <Compile Include="Simulation\Settings\EcoDef.cs" />
+    <Compile Include="Simulation\RPCLog\RPCLogger.cs" />
+    <Compile Include="Simulation\WorldLayers\AccumulatingPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\BufferPollutionCache.cs" />
+    <Compile Include="Simulation\WorldLayers\BufferCellSums.cs" />
+    <Compile Include="Simulation\WorldLayers\GroundPolluterContainer.cs" />
+    <Compile Include="Simulation\WorldLayers\BufferPollutionUtils.cs" />
+    <Compile Include="Simulation\WorldLayers\DebrisCache.cs" />
+    <Compile Include="Simulation\WorldLayers\IDependencyLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\InitialLayerSet.cs" />
+    <Compile Include="Simulation\WorldLayers\IPostWorldGenWorldLayerPusher.cs" />
+    <Compile Include="Simulation\WorldLayers\IStartupWorldLayerPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractionContext.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerNeighborInfo.cs" />
+    <Compile Include="Simulation\WorldLayers\NewWorldLayerSync.cs" />
+    <Compile Include="Simulation\WorldLayers\PusherContext.cs" />
+    <Compile Include="Simulation\WorldLayers\SimStats.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerInteraction`1.cs" />
+    <Compile Include="Simulation\WorldLayers\IWorldLayerInteraction.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerManager.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerUtils.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerNames.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerPuller`1.cs" />
+    <Compile Include="Simulation\WorldLayers\IWorldLayerPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerPusher`1.cs" />
+    <Compile Include="Simulation\WorldLayers\IWorldLayerPusher.cs" />
+    <Compile Include="Simulation\WorldLayers\IWorldLayerRelationship.cs" />
+    <Compile Include="Simulation\WorldLayers\WorldLayerSync.cs" />
+    <Compile Include="Simulation\WorldLayers\Pushers\BiomePusher.cs" />
+    <Compile Include="Simulation\WorldLayers\Pushers\PlantGrower.cs" />
+    <Compile Include="Simulation\WorldLayers\Pushers\PlantSpawner.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\AnimalLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\AnimalLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\BiomeLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\CombineLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerOp.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\CombineWorldLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\DecayingLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\DecayingWorldLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\GroundPollutionPotentialLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\GroundPollutionPotentialLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\LayerPosition.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\PlantLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\PlantLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpeciesHabitabilityLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpeciesHabitabilityLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpeciesLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\ISpeciesLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpeciesLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpreadLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SpreadWorldLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SumLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\SumWorldLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\TemperatureLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerCategory.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerValueType.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerSettingsExtensions.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerSettings.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\IWorldLayerView.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\IWorldLayerLastTickView.cs" />
+    <Compile Include="Simulation\WorldLayers\Layers\WorldLayerAtLastTick.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\BiomeRater.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\EnvironmentInteractions.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\ExponentialGrowthOrDecay.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\PlantInteraction`1.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\PlantNutrientConsumption.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\PlantPopulationConsumedCapacityInteraction.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\ConstrainingLayer.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\PlantYield.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\ProducerSpeciesGrowth.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\ProportionalInteraction.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\SecondOrderReaction.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\SpreadInteraction.cs" />
+    <Compile Include="Simulation\WorldLayers\LayerInteractions\SumInteraction.cs" />
+    <Compile Include="Simulation\WorldLayers\History\AutoGenBlockColorMap.cs" />
+    <Compile Include="Simulation\WorldLayers\History\BitmapExtensions.cs" />
+    <Compile Include="Simulation\WorldLayers\History\FrameData.cs" />
+    <Compile Include="Simulation\WorldLayers\History\GifEncoder.cs" />
+    <Compile Include="Simulation\WorldLayers\History\GifParser.cs" />
+    <Compile Include="Simulation\WorldLayers\History\LZWEncoder.cs" />
+    <Compile Include="Simulation\WorldLayers\History\WorldLayerHistoryOptions.cs" />
+    <Compile Include="Simulation\WorldLayers\History\WorldLayerHistory.cs" />
+    <Compile Include="Simulation\WorldLayers\Editor\ControlExtensions.cs" />
+    <Compile Include="Simulation\WorldLayers\Editor\WorldLayerButtons.cs" />
+    <Compile Include="Simulation\WorldLayers\Components\BiomeComponent.cs" />
+    <Compile Include="Simulation\WorldLayers\Components\WorldLayerComponent.cs" />
+    <Compile Include="Simulation\WorldLayers\Components\Habitability\ConsumerComponent.cs" />
+    <Compile Include="Simulation\WorldLayers\Components\Habitability\HabitabilityComponent.cs" />
+    <Compile Include="Simulation\WorldLayers\Components\Habitability\LayerRequirementComponent.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\PlantSpreader.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\AirPollutionPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\BufferPollutionPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\NutrientPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\PlantPopulationPuller.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\PullConstructed.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\PullFertileGround.cs" />
+    <Compile Include="Simulation\WorldLayers\Pullers\PullPlantGrowth.cs" />
+    <Compile Include="Simulation\WorldLayers\Internal\PlantGrouper.cs" />
+    <Compile Include="Simulation\Plants\PlantCache.cs" />
+    <Compile Include="Simulation\Plants\PlantsInAreaEnumerable.cs" />
+    <Compile Include="Simulation\Plants\PlantsInAreaEnumerableExtensions.cs" />
+    <Compile Include="Simulation\PathFinding\PathFindingPlugin.cs" />
+    <Compile Include="Simulation\Pathfinding\PathManager.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PackedPathNode.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PackedPathNodeExtensions.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PathFactory.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PathFinder.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PathfindUtil.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PathRegion.cs" />
+    <Compile Include="Simulation\Pathfinding\Internal\PathRegionSet.cs" />
+    <Compile Include="Simulation\Migrations\TemperatureLayerMigration.cs" />
+    <Compile Include="Simulation\Migrations\V0_9_7\TreeBranchesMigration.cs" />
+    <Compile Include="Simulation\Migrations\V0_9_2\WorldLayerMigration.cs" />
+    <Compile Include="Simulation\Factories\AnimalFactory.cs" />
+    <Compile Include="Simulation\Factories\PlantFactory.cs" />
+    <Compile Include="Simulation\Animals\AnimalPositionUtils.cs" />
+    <Compile Include="Simulation\Animals\AnimalsManager.cs" />
+    <Compile Include="Simulation\Animals\MockWorldObserver.cs" />
+    <Compile Include="Simulation\Animals\HerdManager.cs" />
+    <Compile Include="Simulation\Animals\Herd.cs" />
+    <Compile Include="Simulation\Animals\Internal\HerdSpawn.cs" />
+    <Compile Include="Simulation\Agents\ObserverManager.cs" />
+    <Compile Include="Simulation\Agents\Organism.cs" />
+    <Compile Include="Simulation\Agents\Plant.cs" />
+    <Compile Include="Simulation\Agents\ITickable.cs" />
+    <Compile Include="Simulation\Agents\Tickable.cs" />
+    <Compile Include="Simulation\Agents\LeafBunch.cs" />
+    <Compile Include="Simulation\Agents\TreeBranch.cs" />
+    <Compile Include="Simulation\Agents\Tree.cs" />
+    <Compile Include="Simulation\Agents\Animal.cs" />
+    <Compile Include="Simulation\Agents\ICanTakeDamage.cs" />
+    <Compile Include="Simulation\Agents\IAnimalUtils.cs" />
+    <Compile Include="Simulation\Agents\AI\IBehaviorControlled.cs" />
+    <Compile Include="Simulation\Agents\AI\BehaviorDebug.cs" />
+    <Compile Include="Simulation\Agents\AI\GridUtils.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

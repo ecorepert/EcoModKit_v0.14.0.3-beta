@@ -1,0 +1,19 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Eco.Gameplay.Migrations.V0_9_6.TradeOfferMigration
+// Assembly: Eco.Gameplay, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: E91D36E0-DE51-4020-BCDC-BDFD4EB61D56
+// Assembly location: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.Gameplay.dll
+// XML documentation location: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.Gameplay.xml
+
+using Eco.Core.Serialization.Migrations;
+using Eco.Core.Serialization.Migrations.Attributes;
+
+#nullable disable
+namespace Eco.Gameplay.Migrations.V0_9_6;
+
+/// <summary> From the version 3.9208 find all the stores and update the max durability /// </summary>
+[Migration(SinceVersion = 3.9208)]
+public class TradeOfferMigration : IPostLoadMigration
+{
+  public void OnPostLoad();
+}

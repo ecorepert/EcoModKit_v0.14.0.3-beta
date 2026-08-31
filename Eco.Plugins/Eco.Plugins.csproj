@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.Plugins.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{319B504D-CB1F-4311-B928-234A54CA3AF1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.Plugins</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>lib\Eco.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Simulation">
+      <HintPath>lib\Eco.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="StrangeCloud.Service.Client.CSharp">
+      <HintPath>lib\StrangeCloud.Service.Client.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="System.Net.Sockets" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Threading" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Controller\Internal\ClientUpdater.cs" />
+    <Compile Include="Core\Controller\Internal\ControllerUpdater.cs" />
+    <Compile Include="Plugins\Rcon\RconClient.cs" />
+    <Compile Include="Plugins\Rcon\RconPacketType.cs" />
+    <Compile Include="Plugins\Rcon\RconPacket.cs" />
+    <Compile Include="Plugins\Rcon\RconPlugin.cs" />
+    <Compile Include="Plugins\Rcon\RconProtocolError.cs" />
+    <Compile Include="Plugins\Profiling\ProfilingChatCommands.cs" />
+    <Compile Include="Plugins\Profiling\ProfilingPlugin.cs" />
+    <Compile Include="Plugins\Profiling\ProfilingScenario.cs" />
+    <Compile Include="Plugins\Profiling\IProfilingScenario.cs" />
+    <Compile Include="Plugins\Profiling\JetbrainsDotTraceTimelineScenario.cs" />
+    <Compile Include="Plugins\Profiling\DotnetDumpScenario.cs" />
+    <Compile Include="Plugins\Profiling\DotnetTraceScenario.cs" />
+    <Compile Include="Plugins\Networking\AddressTakenError.cs" />
+    <Compile Include="Plugins\Networking\Client.cs" />
+    <Compile Include="Plugins\Networking\Firewall.cs" />
+    <Compile Include="Plugins\Networking\LoginQueue.cs" />
+    <Compile Include="Plugins\Networking\NetworkCommands.cs" />
+    <Compile Include="Plugins\Networking\NetworkJoinHandler`1.cs" />
+    <Compile Include="Plugins\Networking\EcoServerConfig.cs" />
+    <Compile Include="Plugins\Networking\ThreadSafeNetObjectViewerCollection.cs" />
+    <Compile Include="Plugins\Networking\NetworkManager.cs" />
+    <Compile Include="Plugins\Networking\NetworkMessage.cs" />
+    <Compile Include="Plugins\Networking\NetworkServer.cs" />
+    <Compile Include="Plugins\Networking\NetworkStats.cs" />
+    <Compile Include="Plugins\Networking\PriorityLoginQueue.cs" />
+    <Compile Include="Plugins\Networking\QuadTreePerType.cs" />
+    <Compile Include="Plugins\Networking\QuadTreeNetObjectCollection.cs" />
+    <Compile Include="Plugins\Networking\StrangeCloudWorldRegistration.cs" />
+    <Compile Include="Plugins\Networking\UPnPMapper.cs" />
+    <Compile Include="Plugins\Networking\UPnPMapping.cs" />
+    <Compile Include="Plugins\Networking\MasterServerDebugUtils.cs" />
+    <Compile Include="Plugins\Exceptions\NetworkServerException.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

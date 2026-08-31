@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.WebServer.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2571F6DC-AC2D-4F79-A867-9D2B51EA0880}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.WebServer</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>lib\Eco.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Simulation">
+      <HintPath>lib\Eco.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Stats">
+      <HintPath>lib\Eco.Stats.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication" />
+    <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Authorization" />
+    <Reference Include="Microsoft.AspNetCore.Cors" />
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" />
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Options" />
+    <Reference Include="Microsoft.Extensions.Primitives" />
+    <Reference Include="StrangeCloud.Service.Client.CSharp">
+      <HintPath>lib\StrangeCloud.Service.Client.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Security.Claims" />
+    <Reference Include="System.Text.Encodings.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Webserver\Web\Controllers\DataExportController.cs" />
+    <Compile Include="WebServer\VectorConverter.cs" />
+    <Compile Include="WebServer\WebServer.cs" />
+    <Compile Include="WebServer\WebServerPlugin.cs" />
+    <Compile Include="WebServer\Controllers\MapController.cs" />
+    <Compile Include="WebServer\Controllers\MapJSON.cs" />
+    <Compile Include="WebServer\Web\EcoApiAuthentication.cs" />
+    <Compile Include="WebServer\Web\EcoAuthentication.cs" />
+    <Compile Include="WebServer\Web\CustomSerializersSettings.cs" />
+    <Compile Include="WebServer\Web\CustomSerializersAttribute.cs" />
+    <Compile Include="WebServer\Web\Startup.cs" />
+    <Compile Include="WebServer\Web\WebConstants.cs" />
+    <Compile Include="WebServer\Web\Utils\ApplicationBuilderExtensions.cs" />
+    <Compile Include="WebServer\Web\Utils\ControllerExtensions.cs" />
+    <Compile Include="WebServer\Web\Utils\EcoPluginUtils.cs" />
+    <Compile Include="WebServer\Web\Utils\MapLayerAwareFileProvider.cs" />
+    <Compile Include="WebServer\Web\Utils\NewtonsoftUtils.cs" />
+    <Compile Include="WebServer\Web\Utils\ServiceCollectionExtensions.cs" />
+    <Compile Include="WebServer\Web\Swagger\AuthPolicyOperationFilter.cs" />
+    <Compile Include="WebServer\Web\Swagger\DebugCallPolicyOperationFilter.cs" />
+    <Compile Include="WebServer\Web\Swagger\TagDescriptionsDocumentFilter.cs" />
+    <Compile Include="WebServer\Web\Models\Action.cs" />
+    <Compile Include="WebServer\Web\Models\AdminReturnModel.cs" />
+    <Compile Include="WebServer\Web\Models\ChatCommandRequest.cs" />
+    <Compile Include="WebServer\Web\Models\ExportGameModel.cs" />
+    <Compile Include="WebServer\Web\Models\ServerConfigModel.cs" />
+    <Compile Include="WebServer\Web\Middleware\ContentLanguageMiddleware.cs" />
+    <Compile Include="WebServer\Web\Filters\DebugCallAttribute.cs" />
+    <Compile Include="WebServer\Web\Filters\ExceptionFilter.cs" />
+    <Compile Include="WebServer\Web\Controllers\AdminController.cs" />
+    <Compile Include="WebServer\Web\Controllers\ChatController.cs" />
+    <Compile Include="WebServer\Web\Controllers\CommandController.cs" />
+    <Compile Include="WebServer\Web\Controllers\EcoWebServerError.cs" />
+    <Compile Include="WebServer\Web\Controllers\ElectionController.cs" />
+    <Compile Include="WebServer\Web\Controllers\LawController.cs" />
+    <Compile Include="WebServer\Web\Controllers\LogController.cs" />
+    <Compile Include="WebServer\Web\Controllers\PerformanceController.cs" />
+    <Compile Include="WebServer\Web\Controllers\PluginResult.cs" />
+    <Compile Include="WebServer\Web\Controllers\PluginsController.cs" />
+    <Compile Include="WebServer\Web\Controllers\ProfilingResultsController.cs" />
+    <Compile Include="WebServer\Web\Controllers\RootController.cs" />
+    <Compile Include="WebServer\Web\Controllers\StatReturn.cs" />
+    <Compile Include="WebServer\Web\Controllers\StatsController.cs" />
+    <Compile Include="WebServer\Web\Controllers\UsersController.cs" />
+    <Compile Include="WebServer\Web\Controllers\WorldLayerController.cs" />
+    <Compile Include="WebServer\Web\Authorization\AdministratorRequirementHandler.cs" />
+    <Compile Include="WebServer\Web\Authorization\AdministratorRoleRequirement.cs" />
+    <Compile Include="WebServer\Web\Authorization\PolicyNames.cs" />
+    <Compile Include="WebServer\Web\Authentication\ClaimExtensions.cs" />
+    <Compile Include="WebServer\Web\Authentication\SlgClaimTypes.cs" />
+    <Compile Include="WebServer\Web\Authentication\EcoUserIdentity.cs" />
+    <Compile Include="WebServer\Utils\JsonSerializerSettingsExtensions.cs" />
+    <Compile Include="WebServer\Utils\StatUtils.cs" />
+    <Compile Include="WebServer\Utils\TimeUtils.cs" />
+    <Compile Include="WebServer\Results\JsonStreamResult.cs" />
+    <Compile Include="WebServer\DataTransferObjects\DataTransferObject.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ChatMessageV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\CommandMessageV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\CommandResultV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\DistrictMapV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\DistrictV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\DistrictExtension.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectedTitleV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectedTitleDTOExtensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectionProcessV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectionProcessV1Extensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\EntityV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ExecuteCommandV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\FrontPageV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectionResultsV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectionChoiceV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\CivicActionV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ElectionCommentV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\GameServerElectionV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\GameServerElectionV1Extensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\GraphableV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\GraphV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ItemV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ItemStackV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\LawV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\LawV1Extensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\MapStatsV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\MapV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\OptionalLawFieldsV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\OrganismV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\PlayerLawActivityV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\PlayerElectionActivityV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ActivityItemV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\PlayerV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\PluginInfoV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\ProfilingResultV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\RunoffVoteV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\RunoffVoteV1Extensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\SimpleEntryV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\StatInfoTreeV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\StatInfoFlatV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\UserV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\UserV1Extensions.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\Vector3V1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WebPluginInfoV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WorldLayers\LayerInputV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WorldLayers\LayerRelationshipV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WorldLayers\LayerRelationshipDTOUtil.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WorldLayers\WorldLayerGroupV1.cs" />
+    <Compile Include="WebServer\DataTransferObjects\V1\WorldLayers\WorldLayerV1.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

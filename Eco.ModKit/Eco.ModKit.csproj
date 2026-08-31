@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.ModKit.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE07C243-9E89-4703-BCFE-BBDD35AC118F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.ModKit</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco.ModKit</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Gameplay">
+      <HintPath>lib\Eco.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.World">
+      <HintPath>lib\Eco.World.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Immutable" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection.Metadata" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Loader" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyTypesProvider.cs" />
+    <Compile Include="ITypesProvider.cs" />
+    <Compile Include="ModEntryControl.cs" />
+    <Compile Include="ModsDownloadManager.cs" />
+    <Compile Include="ModContentSync.cs" />
+    <Compile Include="ModContentUploadController.cs" />
+    <Compile Include="ModDataSync.cs" />
+    <Compile Include="ModKitConfig.cs" />
+    <Compile Include="ModKitPlugin.cs" />
+    <Compile Include="RoslynCompiler.cs" />
+    <Compile Include="Statics\StaticModPlayer.cs" />
+    <Compile Include="Internal\ModList.cs" />
+    <Compile Include="Internal\Avatar.cs" />
+    <Compile Include="Internal\User.cs" />
+    <Compile Include="Internal\Logo.cs" />
+    <Compile Include="Internal\Filehash.cs" />
+    <Compile Include="Internal\Download.cs" />
+    <Compile Include="Internal\Modfile.cs" />
+    <Compile Include="Internal\Image.cs" />
+    <Compile Include="Internal\ModMedia.cs" />
+    <Compile Include="Internal\RatingSummary.cs" />
+    <Compile Include="Internal\ModTag.cs" />
+    <Compile Include="Internal\ModDependenciesData.cs" />
+    <Compile Include="Internal\ModDependencies.cs" />
+    <Compile Include="Internal\Mod.cs" />
+    <Compile Include="Internal\Weaving\AppDomainAssemblyResolver.cs" />
+    <Compile Include="Internal\Weaving\EcoLogger.cs" />
+    <Compile Include="Internal\Weaving\RuntimeWeaver.cs" />
+    <Compile Include="Internal\Weaving\Extensions\LoggerExtensions.cs" />
+    <Compile Include="Internal\Cecil\AssemblyConversionChecker.cs" />
+    <Compile Include="Internal\Cecil\AssemblyConverter.cs" />
+    <Compile Include="Internal\Cecil\AssemblyReferenceConverter.cs" />
+    <Compile Include="Internal\Cecil\ConverterContext.cs" />
+    <Compile Include="Internal\Cecil\ConverterUtils.cs" />
+    <Compile Include="Internal\Cecil\EventConverter.cs" />
+    <Compile Include="Internal\Cecil\FieldConverter.cs" />
+    <Compile Include="Internal\Cecil\MethodConverter.cs" />
+    <Compile Include="Internal\Cecil\ModuleConverter.cs" />
+    <Compile Include="Internal\Cecil\PropertyConverter.cs" />
+    <Compile Include="Internal\Cecil\TypeConverter.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

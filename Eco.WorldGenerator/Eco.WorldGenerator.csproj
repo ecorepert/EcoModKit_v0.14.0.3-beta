@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.WorldGenerator.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC86223E-3994-487D-BFEF-AB2BA20D976D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.WorldGenerator</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco.WorldGenerator</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.World">
+      <HintPath>lib\Eco.World.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Drawing.Common" />
+    <Reference Include="System.Drawing.Primitives" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiomePolygon.cs" />
+    <Compile Include="BiomePolygonCollectionExtensions.cs" />
+    <Compile Include="Biome.cs" />
+    <Compile Include="BiomeExtensions.cs" />
+    <Compile Include="DeepOcean.cs" />
+    <Compile Include="Ocean.cs" />
+    <Compile Include="Coast.cs" />
+    <Compile Include="Grassland.cs" />
+    <Compile Include="WarmForest.cs" />
+    <Compile Include="ColdForest.cs" />
+    <Compile Include="RainForest.cs" />
+    <Compile Include="Desert.cs" />
+    <Compile Include="Taiga.cs" />
+    <Compile Include="Tundra.cs" />
+    <Compile Include="Ice.cs" />
+    <Compile Include="Wetland.cs" />
+    <Compile Include="ColdCoast.cs" />
+    <Compile Include="WarmCoast.cs" />
+    <Compile Include="Steppe.cs" />
+    <Compile Include="HighDesert.cs" />
+    <Compile Include="CliffNotes.cs" />
+    <Compile Include="CliffExtruder.cs" />
+    <Compile Include="VoronoiWorldGeneratorConfig.cs" />
+    <Compile Include="WorldPresetsPropertyCorrespondence.cs" />
+    <Compile Include="WorldPresetsValue.cs" />
+    <Compile Include="WorldPresetsRange.cs" />
+    <Compile Include="WorldSettings.cs" />
+    <Compile Include="Crater.cs" />
+    <Compile Include="CraterGenerator.cs" />
+    <Compile Include="DepositTerrainModule.cs" />
+    <Compile Include="DirectBitmap.cs" />
+    <Compile Include="IBlocksSpawner.cs" />
+    <Compile Include="EcoTerraceNode.cs" />
+    <Compile Include="FlatTerraceModule.cs" />
+    <Compile Include="VoronoiModule.cs" />
+    <Compile Include="SeamlessNoise.cs" />
+    <Compile Include="IWorldGenFeature.cs" />
+    <Compile Include="SpecialFeatureGenerator.cs" />
+    <Compile Include="TerrainGenerator.cs" />
+    <Compile Include="TerrainGeneratorPosition.cs" />
+    <Compile Include="TerrainGeneratorUtils.cs" />
+    <Compile Include="ITerrainModule.cs" />
+    <Compile Include="TerrainModule.cs" />
+    <Compile Include="NoiseType.cs" />
+    <Compile Include="NoiseDistributionType.cs" />
+    <Compile Include="StandardTerrainModule.cs" />
+    <Compile Include="BiomeTerrainModule.cs" />
+    <Compile Include="BlockDepthRange.cs" />
+    <Compile Include="TerrainDepthModule.cs" />
+    <Compile Include="WorldGeneratorPlugin.cs" />
+    <Compile Include="VoronoiWorldGenerator.cs" />
+    <Compile Include="VoronoiWorldGeneratorExtensions.cs" />
+    <Compile Include="PoissonDiscSampler.cs" />
+    <Compile Include="Voronoi.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Site.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="Halfedge.cs" />
+    <Compile Include="GraphEdge.cs" />
+    <Compile Include="SiteSorterYX.cs" />
+    <Compile Include="Utils\BitmapExtensions.cs" />
+    <Compile Include="UI\TerrainEditorContainer.cs" />
+    <Compile Include="UI\TerrainEditorPanel.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

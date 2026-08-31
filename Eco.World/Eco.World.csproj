@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\Eco.World.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1784148-7383-4003-BE2A-B37634A19E31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.World</AssemblyName>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco.World</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eco.Core">
+      <HintPath>lib\Eco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Shared">
+      <HintPath>lib\Eco.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtmosphereObject.cs" />
+    <Compile Include="DefaultAtmosphere.cs" />
+    <Compile Include="AtmosphereType.cs" />
+    <Compile Include="NonSharedBlockAttribute.cs" />
+    <Compile Include="BlockManager.cs" />
+    <Compile Include="BlockExtensions.cs" />
+    <Compile Include="PersistentChunkObject.cs" />
+    <Compile Include="MaxYCache.cs" />
+    <Compile Include="WaterHeightCache.cs" />
+    <Compile Include="TopBlockCache.cs" />
+    <Compile Include="PersistentChunkPack.cs" />
+    <Compile Include="PersistentChunk.cs" />
+    <Compile Include="PersistentChunkGrid.cs" />
+    <Compile Include="PrimitiveRenderer.cs" />
+    <Compile Include="BlockChange.cs" />
+    <Compile Include="WorldUtils.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="WorldChunk.cs" />
+    <Compile Include="WorldChunkGrid.cs" />
+    <Compile Include="WorldChunkGridBuilder.cs" />
+    <Compile Include="WorldPlugin.cs" />
+    <Compile Include="Water\IWaterLoggedBlock.cs" />
+    <Compile Include="Water\WaterManager.cs" />
+    <Compile Include="Water\CacheData.cs" />
+    <Compile Include="Utils\Flooding.cs" />
+    <Compile Include="Utils\MapIterators.cs" />
+    <Compile Include="Serializers\BlockSerializer`1.cs" />
+    <Compile Include="Serializers\BlockMigrationSerializer`1.cs" />
+    <Compile Include="Pipes\PipePassThroughManager.cs" />
+    <Compile Include="Pipes\PassThroughEntry.cs" />
+    <Compile Include="Migrations\BlocksMigration78to80.cs" />
+    <Compile Include="Internal\ChunkUpdater.cs" />
+    <Compile Include="Color\BlockColorManager.cs" />
+    <Compile Include="Color\IColoredBlock.cs" />
+    <Compile Include="Blocks\Block.cs" />
+    <Compile Include="Blocks\BlockAttribute.cs" />
+    <Compile Include="Blocks\Transient.cs" />
+    <Compile Include="Blocks\Empty.cs" />
+    <Compile Include="Blocks\Impenetrable.cs" />
+    <Compile Include="Blocks\Solid.cs" />
+    <Compile Include="Blocks\Paint.cs" />
+    <Compile Include="Blocks\Occupied.cs" />
+    <Compile Include="Blocks\UnderWater.cs" />
+    <Compile Include="Blocks\DoesntEncase.cs" />
+    <Compile Include="Blocks\Wall.cs" />
+    <Compile Include="Blocks\BuildRoomMaterialOption.cs" />
+    <Compile Include="Blocks\Watertight.cs" />
+    <Compile Include="Blocks\Fertile.cs" />
+    <Compile Include="Blocks\Minable.cs" />
+    <Compile Include="Blocks\Cliff.cs" />
+    <Compile Include="Blocks\Constructed.cs" />
+    <Compile Include="Blocks\Tillable.cs" />
+    <Compile Include="Blocks\Tilled.cs" />
+    <Compile Include="Blocks\Crushed.cs" />
+    <Compile Include="Blocks\Diggable.cs" />
+    <Compile Include="Blocks\Ramp.cs" />
+    <Compile Include="Blocks\TreeDebris.cs" />
+    <Compile Include="Blocks\GroundPollutionType.cs" />
+    <Compile Include="Blocks\PolluteGround.cs" />
+    <Compile Include="Blocks\FulfillsRoomRequirementAttribute.cs" />
+    <Compile Include="Blocks\IsFormAttribute.cs" />
+    <Compile Include="Blocks\RotatedVariants.cs" />
+    <Compile Include="Blocks\NextRamp.cs" />
+    <Compile Include="Blocks\BiomeBlock.cs" />
+    <Compile Include="Blocks\BiomeDestructible.cs" />
+    <Compile Include="Blocks\MoveEfficiency.cs" />
+    <Compile Include="Blocks\Road.cs" />
+    <Compile Include="Blocks\LookAtTooltip.cs" />
+    <Compile Include="Blocks\EmptyBlock.cs" />
+    <Compile Include="Blocks\CharredEarthBlock.cs" />
+    <Compile Include="Blocks\RailTrackBlock.cs" />
+    <Compile Include="Blocks\MudBlock.cs" />
+    <Compile Include="Blocks\TreeBlock.cs" />
+    <Compile Include="Blocks\BlockType.cs" />
+    <Compile Include="Blocks\EncasedWaterBlock.cs" />
+    <Compile Include="Blocks\ITickableBlock.cs" />
+    <Compile Include="Blocks\IPlaceAwareBlock.cs" />
+    <Compile Include="Blocks\IDestroyAwareBlock.cs" />
+    <Compile Include="Blocks\IWaterBlock.cs" />
+    <Compile Include="Blocks\DirtBlock.cs" />
+    <Compile Include="Blocks\GrassBlock.cs" />
+    <Compile Include="Blocks\ForestSoilBlock.cs" />
+    <Compile Include="Blocks\WetlandsSoilBlock.cs" />
+    <Compile Include="Blocks\ColdForestSoilBlock.cs" />
+    <Compile Include="Blocks\RainforestSoilBlock.cs" />
+    <Compile Include="Blocks\WarmForestSoilBlock.cs" />
+    <Compile Include="Blocks\TaigaSoilBlock.cs" />
+    <Compile Include="Blocks\TundraSoilBlock.cs" />
+    <Compile Include="Blocks\FrozenSoilBlock.cs" />
+    <Compile Include="Blocks\IceBlock.cs" />
+    <Compile Include="Blocks\SnowBlock.cs" />
+    <Compile Include="Blocks\OceanSandBlock.cs" />
+    <Compile Include="Blocks\DesertSandBlock.cs" />
+    <Compile Include="Blocks\TilledDirtBlock.cs" />
+    <Compile Include="Blocks\SandBlock.cs" />
+    <Compile Include="Blocks\RiverSandBlock.cs" />
+    <Compile Include="Blocks\RockySoilBlock.cs" />
+    <Compile Include="Blocks\RiverbedBlock.cs" />
+    <Compile Include="Blocks\ImpenetrableStoneBlock.cs" />
+    <Compile Include="Blocks\SewageBlock.cs" />
+    <Compile Include="Blocks\PetrolBlock.cs" />
+    <Compile Include="Blocks\SaltWaterBlock.cs" />
+    <Compile Include="Blocks\PollutedWaterBlock.cs" />
+    <Compile Include="Blocks\PollutedSaltWaterBlock.cs" />
+    <Compile Include="Blocks\IndustrialSewageBlock.cs" />
+    <Compile Include="Blocks\ChemicalWasteFluidBlock.cs" />
+    <Compile Include="Blocks\WaterBlock.cs" />
+    <Compile Include="Blocks\Features\IColorBlockData.cs" />
+    <Compile Include="Blocks\Features\IExtraBlockData.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

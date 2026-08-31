@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\orfla\OneDrive\Documents\ecoserveur\EcoModKit_v0.14.0.3-beta\ReferenceAssemblies\StrangeCloud.Service.Client.CSharp.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{598F5CF5-802C-4585-B785-009080E255A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>StrangeCloud.Service.Client.CSharp</AssemblyName>
+    <ApplicationVersion>1.0.25.0</ApplicationVersion>
+    <RootNamespace>StrangeCloud.Service.Client</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NSwagConfig.cs" />
+    <Compile Include="AdminClient.cs" />
+    <Compile Include="AuthenticationClient.cs" />
+    <Compile Include="FlagsClient.cs" />
+    <Compile Include="InvitesClient.cs" />
+    <Compile Include="MarketplaceClient.cs" />
+    <Compile Include="PasswordResetClient.cs" />
+    <Compile Include="RegistrationClient.cs" />
+    <Compile Include="UserAccountClient.cs" />
+    <Compile Include="VoiceClient.cs" />
+    <Compile Include="WorldsClient.cs" />
+    <Compile Include="XsollaClient.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="AwsS3Client.cs" />
+    <Compile Include="StrangeCloudInterface.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Contracts\IAdminClient.cs" />
+    <Compile Include="Contracts\IAuthenticationClient.cs" />
+    <Compile Include="Contracts\IFlagsClient.cs" />
+    <Compile Include="Contracts\IInvitesClient.cs" />
+    <Compile Include="Contracts\IMarketplaceClient.cs" />
+    <Compile Include="Contracts\IPasswordResetClient.cs" />
+    <Compile Include="Contracts\IRegistrationClient.cs" />
+    <Compile Include="Contracts\IUserAccountClient.cs" />
+    <Compile Include="Contracts\IVoiceClient.cs" />
+    <Compile Include="Contracts\IWorldsClient.cs" />
+    <Compile Include="Contracts\IXsollaClient.cs" />
+    <Compile Include="Contracts\IClient.cs" />
+    <Compile Include="Contracts\IAwsS3Client.cs" />
+    <Compile Include="Contracts\StrangeApiError.cs" />
+    <Compile Include="Contracts\StandardEmailBody.cs" />
+    <Compile Include="Contracts\AuthenticateSlgUser.cs" />
+    <Compile Include="Contracts\AuthenticationResult.cs" />
+    <Compile Include="Contracts\StrangeUser.cs" />
+    <Compile Include="Contracts\StrangeAchievement.cs" />
+    <Compile Include="Contracts\InvItem.cs" />
+    <Compile Include="Contracts\UserNotification.cs" />
+    <Compile Include="Contracts\ServerReportSummary.cs" />
+    <Compile Include="Contracts\MarketplaceItem.cs" />
+    <Compile Include="Contracts\StrangeCloudGlobalData.cs" />
+    <Compile Include="Contracts\MarketplaceTransaction.cs" />
+    <Compile Include="Contracts\UserTaxNotification.cs" />
+    <Compile Include="Contracts\TransactionTypeEnum.cs" />
+    <Compile Include="Contracts\MarketplaceItemRegistration.cs" />
+    <Compile Include="Contracts\UsertokenAndPassword.cs" />
+    <Compile Include="Contracts\AdminChangePassword.cs" />
+    <Compile Include="Contracts\UsernameOrEmailAndPassword.cs" />
+    <Compile Include="Contracts\DailySummary.cs" />
+    <Compile Include="Contracts\SummaryType.cs" />
+    <Compile Include="Contracts\HearbeatResult.cs" />
+    <Compile Include="Contracts\IconRequest.cs" />
+    <Compile Include="Contracts\ChangeEmailRequest.cs" />
+    <Compile Include="Contracts\AcceptDevTermsRequest.cs" />
+    <Compile Include="Contracts\VoiceLoginTokenResult.cs" />
+    <Compile Include="Contracts\VoiceTokenResult.cs" />
+    <Compile Include="Contracts\VoiceJoinTokenResult.cs" />
+    <Compile Include="Contracts\StrangeWorldCloudData.cs" />
+    <Compile Include="Contracts\ServerHeartbeatResult.cs" />
+    <Compile Include="Contracts\StrangeWorldRegistrationResult.cs" />
+    <Compile Include="Contracts\UserToKick.cs" />
+    <Compile Include="Contracts\StreamInfo.cs" />
+    <Compile Include="Contracts\ServerHeartbeatData.cs" />
+    <Compile Include="Contracts\SettlementEntry.cs" />
+    <Compile Include="Contracts\StrangeMod.cs" />
+    <Compile Include="Contracts\PaymentRequest.cs" />
+    <Compile Include="Contracts\XsollaErrorResponse.cs" />
+    <Compile Include="Contracts\ErrorDetail.cs" />
+    <Compile Include="Contracts\GameVersion.cs" />
+    <Compile Include="Contracts\Response.cs" />
+    <Compile Include="Contracts\Response2.cs" />
+    <Compile Include="Contracts\Response3.cs" />
+    <Compile Include="Contracts\Response4.cs" />
+    <Compile Include="Contracts\Response5.cs" />
+    <Compile Include="Contracts\Response6.cs" />
+    <Compile Include="Contracts\Response7.cs" />
+    <Compile Include="Contracts\Response8.cs" />
+    <Compile Include="Contracts\Response9.cs" />
+    <Compile Include="Contracts\Response10.cs" />
+    <Compile Include="Contracts\Response11.cs" />
+    <Compile Include="Contracts\Response12.cs" />
+    <Compile Include="Contracts\Response13.cs" />
+    <Compile Include="Contracts\Response14.cs" />
+    <Compile Include="Contracts\Response15.cs" />
+    <Compile Include="Contracts\Response16.cs" />
+    <Compile Include="Contracts\Response17.cs" />
+    <Compile Include="Contracts\Response18.cs" />
+    <Compile Include="Contracts\Response19.cs" />
+    <Compile Include="Contracts\Response20.cs" />
+    <Compile Include="Contracts\Response21.cs" />
+    <Compile Include="Contracts\Response22.cs" />
+    <Compile Include="Contracts\Response23.cs" />
+    <Compile Include="Contracts\Response24.cs" />
+    <Compile Include="Contracts\Response25.cs" />
+    <Compile Include="Contracts\Response26.cs" />
+    <Compile Include="Contracts\Response27.cs" />
+    <Compile Include="Contracts\Response28.cs" />
+    <Compile Include="Contracts\Response29.cs" />
+    <Compile Include="Contracts\Response30.cs" />
+    <Compile Include="Contracts\Response31.cs" />
+    <Compile Include="Contracts\Response32.cs" />
+    <Compile Include="Contracts\Response33.cs" />
+    <Compile Include="Contracts\Response34.cs" />
+    <Compile Include="Contracts\Response35.cs" />
+    <Compile Include="Contracts\Response36.cs" />
+    <Compile Include="Contracts\Response37.cs" />
+    <Compile Include="Contracts\Response38.cs" />
+    <Compile Include="Contracts\Response39.cs" />
+    <Compile Include="Contracts\Response40.cs" />
+    <Compile Include="Contracts\Response41.cs" />
+    <Compile Include="Contracts\Response42.cs" />
+    <Compile Include="Contracts\Response43.cs" />
+    <Compile Include="Contracts\Response44.cs" />
+    <Compile Include="Contracts\Response45.cs" />
+    <Compile Include="Contracts\Response46.cs" />
+    <Compile Include="Contracts\Response47.cs" />
+    <Compile Include="Contracts\Response48.cs" />
+    <Compile Include="Contracts\Response49.cs" />
+    <Compile Include="Contracts\Response50.cs" />
+    <Compile Include="Contracts\Response51.cs" />
+    <Compile Include="Contracts\Response52.cs" />
+    <Compile Include="Contracts\Response53.cs" />
+    <Compile Include="Contracts\Response54.cs" />
+    <Compile Include="Contracts\Response55.cs" />
+    <Compile Include="Contracts\Response56.cs" />
+    <Compile Include="Contracts\Response57.cs" />
+    <Compile Include="Contracts\Response58.cs" />
+    <Compile Include="Contracts\Response59.cs" />
+    <Compile Include="Contracts\Response60.cs" />
+    <Compile Include="Contracts\Response61.cs" />
+    <Compile Include="Contracts\Response62.cs" />
+    <Compile Include="Contracts\Response63.cs" />
+    <Compile Include="Contracts\Response64.cs" />
+    <Compile Include="Contracts\Response65.cs" />
+    <Compile Include="Contracts\Response66.cs" />
+    <Compile Include="Contracts\Response67.cs" />
+    <Compile Include="Contracts\Response68.cs" />
+    <Compile Include="Contracts\Response69.cs" />
+    <Compile Include="Contracts\Response70.cs" />
+    <Compile Include="Contracts\Response71.cs" />
+    <Compile Include="Contracts\Response72.cs" />
+    <Compile Include="Contracts\Response73.cs" />
+    <Compile Include="Contracts\Response74.cs" />
+    <Compile Include="Contracts\Response75.cs" />
+    <Compile Include="Contracts\Response76.cs" />
+    <Compile Include="Contracts\Response77.cs" />
+    <Compile Include="Contracts\Response78.cs" />
+    <Compile Include="Contracts\Response79.cs" />
+    <Compile Include="Contracts\Response80.cs" />
+    <Compile Include="Contracts\Response81.cs" />
+    <Compile Include="Contracts\Response82.cs" />
+    <Compile Include="Contracts\Response83.cs" />
+    <Compile Include="Contracts\Response84.cs" />
+    <Compile Include="Contracts\Response85.cs" />
+    <Compile Include="Contracts\Response86.cs" />
+    <Compile Include="Contracts\DateFormatConverter.cs" />
+    <Compile Include="Contracts\FileParameter.cs" />
+    <Compile Include="Contracts\FileResponse.cs" />
+    <Compile Include="Contracts\StrangeApiException.cs" />
+    <Compile Include="Contracts\StrangeApiException`1.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
